@@ -7,7 +7,7 @@ public func configure(_ app: Application) throws {
 
     app.http.server.configuration.port = 8080
     
-    app.weiboHotSerive = WeiboHotSerive(application: app)
+    app.weiboHotSerive = WeiboHotSerive(app: app)
     
     // register routes
     try routes(app)
